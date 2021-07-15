@@ -47,11 +47,13 @@ const LoggedInView = props => {
               </Link>
             </li>
 
-            <li className="nav-item">
-              <a href="#" className="nav-link" onClick={generateItems}>
-                <i className="ion-compose"/>&nbsp;Generate Items
-              </a>
-            </li>
+            {process.env.NODE_ENV === 'development' && (
+              <li className="nav-item">
+                <a href="#" className="nav-link" onClick={generateItems}>
+                  <i className="ion-compose"/>&nbsp;Generate Items
+                </a>
+              </li>
+            )}
           </>
         )}
 
