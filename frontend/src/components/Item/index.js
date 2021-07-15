@@ -56,7 +56,7 @@ class Item extends React.Component {
         <div className="container page">
           <div className="row">
             <div className="col-3">
-              <img src={this.props.item.image} className="item-img" />
+              <img src={this.props.item.image || '/placeholder.png'} className="item-img" />
             </div>
             <div className="col-9">
               <div dangerouslySetInnerHTML={markup}></div>
@@ -78,7 +78,7 @@ class Item extends React.Component {
 
           <hr />
 
-          <div className="item-actions"></div>
+          <div className="item-actions"/>
 
           <div className="row">
             <CommentContainer
