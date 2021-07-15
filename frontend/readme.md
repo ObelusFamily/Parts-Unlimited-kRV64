@@ -26,3 +26,12 @@ Make sure your server is up and running to serve requests.
 - Profile page (URL: /#/@username, /#/@username/favorites )
   - Show basic user info
   - List of items populated from seller's items or user favorite items
+
+## Generate multiple items for local development
+
+To generate multiple items for local development quickly follow the following steps:
+
+1. Once the application was started, sign-up as a new user. 
+1. Connect to the MongoDB database and change your user's role from "user" to "admin"
+1. Once your user's role has been updated, you will now see a "Generate Items" button in the header.
+1. Click the "Generate Items" button to generate 100 items.
